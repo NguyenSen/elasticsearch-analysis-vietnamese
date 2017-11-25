@@ -1,6 +1,5 @@
-Vietnamese (without diacritics - Tiếng Việt không dấu) Analysis Plugin for Elasticsearch
+Vietnamese (without diacritics - Tiếng Việt không dấu) Analysis Plugin for Elasticsearch 
 ========================================
-
 Vietnamese (without diacritics) Analysis plugin integrates Vietnamese language without diacritics analysis into Elasticsearch.
 
 The plugin provides the `vi_analyzer` analyzer and `vi_tokenizer` tokenizer. The `vi_analyzer` is composed of the `vi_tokenizer` tokenizer, the lowercase and stop filter.
@@ -11,7 +10,7 @@ The plugin provides the `vi_analyzer` analyzer and `vi_tokenizer` tokenizer. The
 ```bash
 bin/elasticsearch-plugin install link/to/binary/version
 ```
-#### Or to build from source, you need to build it with Maven:
+#### Or to build from source, you need to build it with Maven: [![Build Status](https://travis-ci.org/dwyl/learn-travis.svg?branch=master)](https://github.com/yldbk/elasticsearch-analysis-vietnamese-without-diacritics/tree/master/install)
 * Step 1: Build the VnTokenizer
 ```bash
 git clone https://github.com/yldbk/vn-nlp-libraries-vietnamese-without-diacritics.git
@@ -22,7 +21,7 @@ mvn install
 ```bash
 git clone https://github.com/yldbk/elasticsearch-analysis-vietnamese-without-diacritics.git
 cd elasticsearch-analysis-vietnamese-without-diacritics
-mvn package
+mvn package -DskipTests
 ```
 * Step 3: Install the plugin
 ```bash
